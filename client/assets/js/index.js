@@ -8,7 +8,7 @@ document.getElementById("contactForm").addEventListener("submit", async (e) => {
 	};
 
 	try {
-		const response = await fetch("http://localhost:8080/sendEmail", {
+		const response = await fetch("https://mausamm-portfolio.onrender.com/sendEmail", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(formData),
